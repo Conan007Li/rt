@@ -1,0 +1,17 @@
+3rdparty*/
+build*/
+data
+backup
+.vscode
+release*/
+docs/doxygen/html
+tools/
+data_bak/
+/.vs
+/out
+/bin
+build.log
+clang-tidy-result
+CMakeSettings.json
+/UnitTest/data
+

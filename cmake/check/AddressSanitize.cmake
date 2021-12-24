@@ -1,0 +1,8 @@
+if(USING_ADDRESS_SANITIZE)
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O1 -g -fsanitize=address -fno-omit-frame-pointer -fPIC")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O1 -g -fsanitize=address -fno-omit-frame-pointer -fPIC")
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -g -fsanitize=address")
+    message(STATUS "CMAKE_C_FLAGS: " ${CMAKE_C_FLAGS})
+    message(STATUS "CMAKE_CXX_FLAGS: " ${CMAKE_CXX_FLAGS})
+    message(STATUS "CMAKE_EXE_LINKER_FLAGS: " ${CMAKE_EXE_LINKER_FLAGS})
+endif()
